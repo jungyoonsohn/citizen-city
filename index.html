@@ -39,7 +39,8 @@
   <button id="ideaBtn">📮 빈 상가 건의</button>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+<script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script>
+
 
 <script>
   /* ===== 기본 세팅 ===== */
@@ -56,6 +57,7 @@
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild(renderer.domElement);
 
+
   scene.add(new THREE.AmbientLight(0xffffff, 0.7));
 
   const light = new THREE.DirectionalLight(0xffffff, 1);
@@ -64,4 +66,5 @@
 
   /* ===== 바닥 ===== */
   const ground = new THREE.Mes
+
 
